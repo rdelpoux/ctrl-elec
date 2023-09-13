@@ -19,7 +19,7 @@ if ~isempty(A)
 
     dim=[0 .9 .1 .1] ;
     if(A(end,1)==0)
-    annotation('textbox',dim,'String',sprintf('Mode = BO'));
+    annotation('textbox',dim,'String',sprintf('Mode = Voltage'));
     elseif(A(end,1)==1)
     annotation('textbox',dim,'String',sprintf('Mode = Speed'));
     end
