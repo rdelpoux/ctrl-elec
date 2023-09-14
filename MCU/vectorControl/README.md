@@ -4,7 +4,7 @@
 
 ## 1. Introduction
 
-This document describes the setup requirement for running the optimize Vector Control, including voltage and current saturations and space vector modulation. The example can be used with different motors. In this example, we show the behavior with 2 different motors. 
+This document describes the setup requirement for running the proposed Vector Control, including voltage and current saturations and space vector modulation. The example is design using fixed point data type, taking care to limit calculation time. The example can be used with different motors. In this example, we used 2 different motors. 
 
 ## 2. SUGGESTED DEMONSTRATION REQUIREMENTS
 
@@ -83,9 +83,11 @@ This section describes hardware setup required for the demonstration.
 - Plug a 24V power supply to **connector J1** on the LVMC Board. Alternatively, the Inverter Board can also be powered through connector J2.
 - The board has an onboard programmer **PICkit™ On Board (PKoBv4)** , which can be used for programming or debugging the microcontroller or dsPIC DSC on the Board. To use the onboard programmer, connect a  micro-USB cable between the Host PC and **connector J13** on the LVMC Board.
 
+  <img src="../../img/vectorControl/PKoBv4.jpg"/>
+
 ## 4. BASIC DEMONSTRATION
 
-Follow the below instructions step-by-step, to set up and run the motor control demo application:
+Follow the below instructions step-by-step, to set up and run the motor control demo:
 
 1. The model do not require any additional external file such as mfile to run.
 
@@ -97,31 +99,50 @@ Follow the below instructions step-by-step, to set up and run the motor control 
 
    <img src="../../img/vectorControl/ModelwithSampleTime.png" />
 
-4. Click on the double wire icon to highlight timing legend 
+4. Define the motor used:
+
+   - The model provides a mask which allows to define the motor choice and compute the control gains with respect to the motor choice.
+
+      <img src="../../img/vectorControl/MotorChoiceGainTunning.png" />
+
+   - Double click on the bloc to open the dialogue window:
+
+      - For motor choice, predefined motor have been registered, to use another motor, select Custom and enter the parameter directly:
+
+      <img src="../../img/vectorControl/MotorSelection.png" />
+
+      - For the selected motor, the gain tunning is updated. The damping factor and the time response can be adjusted. (see [FOC control page](https://ctrl-elec.fr/mcu_electric_motor_field_oriented_control_controller.html) for tunning details).
+
+      <img src="../../img/vectorControl/GainTunning.png" />
+
+
+   
+
+5. Click on the double wire icon to highlight timing legend 
 
    ![timingLegend](../../img/vectorControl/iconLegend.png)![timingLegend](../../img/vectorControl/timingLegend.png)
 
-5. From this Simulink model an MPLAB X project can be  generated, and it can be used to run the PMSM motor using LVMCr Board. 
+6. From this Simulink model an MPLAB X project can be  generated, and it can be used to run the PMSM motor using LVMCr Board. 
 
-   To generate the code from the Simulink model, go to the **"MICROCHIP"** tab, and enable the tabs shown in the figure below. 
+   To generate the code from the Simulink model, go to the **"MICROCHIP"** tab, and enable the tabs shown in the figure below.
 
-     [![img](../../img/vectorControl/dem7.png)](https://github.com/microchip-pic-avr-solutions/matlab-mclv-48v-300w-dspic33ck64mc105-foc-smo/blob/main/images/dem7.png)
+   ![img](../../img/vectorControl/SelectProg.png)
 
-6. To generate the code and run the motor, click on **‘Build Model’ or ‘Clean Build Model’** option under the **“Microchip”** tab. This will generate the MPLAB X project from the Simulink model and program the dsPIC33CK256MP508 device.
+7. To generate the code and run the motor, click on **‘Build Model’ or ‘Clean Build Model’** option under the **“Microchip”** tab. This will generate the MPLAB X project from the Simulink model and program the dsPIC33CK256MP508 device.
 
-     [![img](../../img/vectorControl/dem8.png)](https://github.com/microchip-pic-avr-solutions/matlab-mclv-48v-300w-dspic33ck64mc105-foc-smo/blob/main/images/dem7.png)
+     ![](../../img/vectorControl/BuildModel.png)
 
-7. After completing the process, the **‘Operation Succeeded’** message will be displayed on the **‘Diagnostics Viewer’**.
+8. After completing the process, the **‘Operation Succeeded’** message will be displayed on the **‘Diagnostics Viewer’**.
 
-8. If the device is successfully programmed, **LED- LD10** will be blinking.
+9. If the device is successfully programmed, **LED- LD10** will be blinking.
 
    ![img](../../img/vectorControl/SWPOT.jpg)
 
-9. Keep the potentiometer (**POT1**) position at the left. Then, to start the demo, press the push button **SW1**. Wait 1s, an alignement strategy find the encoder initial position for the case where no index is present. 
+10. Keep the potentiometer (**POT1**) position at the left. Then, to start the demo, press the push button **SW1**. Wait 1s, an alignement strategy find the encoder initial position for the case where no index is present. 
 
-10. In this mode, the motor is enabled to run clockwise in voltage mode. The reference voltage is set by the potentiometer **POT1**. To run in anticlockwise direction press **SW3**
+11. In this mode, the motor is enabled to run clockwise in voltage mode. The reference voltage is set by the potentiometer **POT1**. To run in anticlockwise direction press **SW3**
 
-11. To activate the velocity control, press the button SW2. In this mode, potentiometer **POT1** sets the reference speed. 
+12. To activate the velocity control, press the button SW2. In this mode, potentiometer **POT1** sets the reference speed. 
 
 ## 5. DATA VISUALIZATION USING PICGUI
 
