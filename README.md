@@ -1,7 +1,9 @@
 # ctrl + elec
 [<img src="img/logo.png"/>](www.ctrl-elec.fr/)
 
-The ctrl + elec project aims at developing embedded advanced control strategies for Synchronous motors from surface mounted motors to reluctance motors. For more informations on the project, visit [ctrl-elec.fr](www.ctrl-elec.fr/)
+[![View ctrl-elec on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://fr.mathworks.com/matlabcentral/fileexchange/135637-ctrl-elec)
+
+The ctrl + elec project aims at developing embedded advanced control strategies for Synchronous motors from surface mounted motors to reluctance motors. For more informations on the project, visit [ctrl-elec.fr](https://www.ctrl-elec.fr/)
 
 ## Authors
 
@@ -13,9 +15,12 @@ This repository contains the different source files (mainly Simulink files) to e
 
 This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@ctrl_elec)
 
-## Content
+[Getting started](https://youtu.be/fAhIvsgS1aM?si=hjhc9MEHJ1EK3xQb)
 
-- [Vector control tutorials](./MCU/vectorControl/vectorContol.md)
+## Content
 
-  [Getting started](https://youtu.be/fAhIvsgS1aM?si=hjhc9MEHJ1EK3xQb)
+- [Vector control tutorial](./MCU/vectorControl/README.md)
 
+  
+  
+  
