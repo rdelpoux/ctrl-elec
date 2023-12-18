@@ -21,6 +21,8 @@ This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@
 
 - [Vector control tutorial](./MCU/vectorControl/README.md)
 
+- [Vector control with Field Weakening](./MCU/fieldWeakening/README.md) 
+
   
   
   
