@@ -25,6 +25,8 @@ This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@
 
 - [Regional Pole Placement embedded LMI solver](./MCU/LMIsolver/README.md)
 
+- [Offline real-time high frequency data logging based methodology](./MCU/dataLogging/readme.md)
+
   
   
   
