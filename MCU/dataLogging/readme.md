@@ -16,13 +16,13 @@ The work presents a methodology for a faster development of observers.  On board
 
 - [MPLAB X IDE and IPE (v6.00)](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) and [XC16 compiler (v2.00)](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
 
-[<img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/ctrl-elec/github/ctrl-elec/MCU/vectorControl/img/vectorControl/mplab-xide.png" />](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) [<img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/ctrl-elec/github/ctrl-elec/MCU/vectorControl/img/vectorControl/xc-compiler.png"/>](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
+[<img src="./../../img/vectorControl/mplab-xide.png" />](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) [<img src="./../../img/vectorControl/xc-compiler.png"/>](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
 
 
 
 - [Matlab R2023a](https://fr.mathworks.com/) and [Mplab Device Block for Simulink (v3.50.34b)](https://fr.mathworks.com/matlabcentral/fileexchange/71892-mplab-device-blocks-for-simulink-dspic-pic32-and-sam-mcu)
 
-[<img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/ctrl-elec/github/ctrl-elec/MCU/vectorControl/img/vectorControl/Matlab_Logo.png"/>](https://fr.mathworks.com/)[<img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/ctrl-elec/github/ctrl-elec/MCU/vectorControl/img/vectorControl/mplab-deviceblocksforsimulink-whitebackground.png"/>](https://fr.mathworks.com/matlabcentral/fileexchange/71892-mplab-device-blocks-for-simulink-dspic-pic32-and-sam-mcu)
+[<img src="./../../img/vectorControl/Matlab_Logo.png"/>](https://fr.mathworks.com/)[<img src="./../../img/vectorControl/mplab-deviceblocksforsimulink-whitebackground.png"/>](https://fr.mathworks.com/matlabcentral/fileexchange/71892-mplab-device-blocks-for-simulink-dspic-pic32-and-sam-mcu)
 
 - Required MATLAB add-on packages
   - Simulink (v10.7)
@@ -38,17 +38,17 @@ The work presents a methodology for a faster development of observers.  On board
 
 The demonstration uses a [dsPIC33CK LVMC](https://www.microchip.com/en-us/development-tool/dm330031) board
 
-<img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/ctrl-elec/github/ctrl-elec/MCU/vectorControl/img/vectorControl/3182-dm330031.jpg" />
+<img src="./../../img/vectorControl/3182-dm330031.jpg" />
 
 The example can be used with different motors, including
 
 - [Teknic-2310P motor](https://www.digikey.fr/fr/products/detail/texas-instruments/LVSERVOMTR/5005342)
 
-<img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/ctrl-elec/github/ctrl-elec/MCU/vectorControl/img/vectorControl/hudson_03.jpg" />
+<img src="./../../img/vectorControl/hudson_03.jpg" />
 
 - [Hurst Long - AC300022 - with encoder](https://fr.farnell.com/en-FR/microchip/ac300022/bldc-motor-3-phase-w-encoder/dp/1688718)
 
-<img src="../../img/vectorControl/Hurst.jpg" />
+<img src="./../../img/vectorControl/Hurst.jpg" />
 
 ## 3. Getting Started
 
