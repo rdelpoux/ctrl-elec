@@ -19,6 +19,8 @@ This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@
 
 ## Content
 
+- [Supported Boards](./MCU/supportedBoard/README.md)
+
 - [Vector control tutorial](./MCU/vectorControl/README.md)
 
 - [Vector control with Field Weakening](./MCU/fieldWeakening/README.md) 
@@ -28,5 +30,6 @@ This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@
 - [Offline real-time high frequency data logging based methodology](./MCU/dataLogging/readme.md)
 
   
-  
-  
+
+
+
