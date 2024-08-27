@@ -19,7 +19,7 @@ This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@
 
 ## Content
 
-- [Supported Boards](./MCU/supportedBoard/README.md)
+- [Supported Boards](./MCU/supportedBoard/SupportedBoards.md)
 
 - [Vector control tutorial](./MCU/vectorControl/README.md)
 

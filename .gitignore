@@ -1,0 +1,15 @@
+*.aux
+*.div
+*.nav
+*.out
+*.snm
+*.toc
+*.gz
+
+*.dvi
+*.ps
+
+*.X
+*.slxc
+*.tlc
+

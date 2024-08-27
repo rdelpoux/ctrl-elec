@@ -12,7 +12,19 @@ This document describes the setup requirement for running the proposed Vector Co
 
 The suggested demonstration requirements are available here : [Supported Boards](./../supportedBoard/SupportedBoards.md).
 
+The proposed example is proposed for different boards and DSCs:
 
+- [MCS MCLV-48V-300W Development Board](./../supportedBoard/MCLV_48V_300W_demoBoard.md) (Recommended)
+  - [dsPIC33AK128MC106](https://www.microchip.com/en-us/development-tool/EV68M17A)
+  - [dsPIC33CK256MP508](https://www.microchip.com/en-us/development-tool/ev62p66a)
+- [DSPIC33CK LOW VOLTAGE MOTOR CONTROL (LVMC) DEVELOPMENT BOARD](./../supportedBoard/LVMC_demoBoard.md)
+- [DSPICDEM™ MCLV-2 DEVELOPMENT BOARD ](./../supportedBoard/MCLV2_demoBoard.md)
+  - [ATSAME54P20A](https://www.microchip.com/en-us/development-tool/MA320207)
+
+And Both motors: 
+
+- [Teknic-2310P motor](https://www.digikey.fr/fr/products/detail/texas-instruments/LVSERVOMTR/5005342) (Recommended)
+- [Hurst Long - AC300022 - with encoder](https://fr.farnell.com/en-FR/microchip/ac300022/bldc-motor-3-phase-w-encoder/dp/1688718)
 
 ### MATLAB Model Required for the Demonstration
 
