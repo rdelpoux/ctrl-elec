@@ -36,13 +36,13 @@ Follow the below instructions step-by-step, to set up and run the motor control 
 
 1. The model do not require any additional external file such as mfile to run.
 
-2. Open the MCU_vectorControl_dsPIC33CK_LVMC.slx Simulink model
+2. Open the Simulink model corresponding to the board and DSC available, ex: MCU_vectorControl_dsPIC33A_LVMC.slx Simulink model
 
    <img src="./../../img/vectorControl/currentFolder.png" />
 
 3. This opens the FOC Simulink model as shown below.
 
-   <img src="./../../img/vectorControl/ModelwithSampleTime.png" />
+   <img src="./../../img/vectorControl/simulinkModel.png" />
 
 4. Define the motor used:
 
@@ -67,7 +67,7 @@ Follow the below instructions step-by-step, to set up and run the motor control 
 
    ![timingLegend](./../../img/vectorControl/iconLegend.png)![timingLegend](./../../img/vectorControl/timingLegend.png)
 
-6. From this Simulink model an MPLAB X project can be  generated, and it can be used to run the PMSM motor using LVMCr Board. 
+6. From this Simulink model an MPLAB X project can be  generated, and it can be used to run the PMSM motor on board. 
 
    To generate the code from the Simulink model, go to the **"MICROCHIP"** tab, and enable the tabs shown in the figure below.
 
@@ -79,34 +79,31 @@ Follow the below instructions step-by-step, to set up and run the motor control 
 
 8. After completing the process, the **‘Operation Succeeded’** message will be displayed on the **‘Diagnostics Viewer’**.
 
-9. If the device is successfully programmed, **LED- LD10** will be blinking.
+9. If the device is successfully programmed, **LD2** will be blinking.
 
-   ![img](./../../img/vectorControl/SWPOT.jpg)
+   ![img](./../../img/vectorControl/user_inputs.jpg)
 
-10. Keep the potentiometer (**POT1**) position at the left. Then, to start the demo, press the push button **SW1**. Wait 1s, an alignement strategy find the encoder initial position for the case where no index is present. 
+10. How to use this model : 
 
-11. In this mode, the motor is enabled to run clockwise in voltage mode. The reference voltage is set by the potentiometer **POT1**. To run in anticlockwise direction press **SW3**
 
-12. To activate the velocity control, press the button SW2. In this mode, potentiometer **POT1** sets the reference speed. 
+     1. SW1 : ON/OFF -> Enable or Disable the control
+
+     2. SW2 : mode ->  
+
+          1. mode = 0 : Open loop, (**POT1**) apply a reference voltage in the interval  $[0 - V_{\rm max}]$
+
+          2. mode = 1 : Speed Control, (**POT1**) apply a reference speed in the intervel  $[0 - \Omega_{\rm max}]$
+
+     3. SW3 : dir : pressing the switch reverse the direction (if available)
+
 
 ## 5. DATA VISUALIZATION USING PICGUI
 
-The proposed algorithm comes with the possibility to vizualize data using PICGUI interface. More details on this section is available on the [Motor Control University - Data Visualization page](https://ctrl-elec.fr/mcu_electric_motor_embeddedCode_datavisu.html). [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) provide a simple but powerful graphical user interface. It allows to send and receive data from the chip using a Serial link.
+The proposed algorithm comes with the possibility to visualize data using PICGUI interface. More details on this section is available on the [Motor Control University - Data Visualization page](https://ctrl-elec.fr/mcu_electric_motor_embeddedCode_datavisu.html). [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) provide a simple but powerful graphical user interface. It allows to send and receive data from the chip using a Serial link.
 
-1. Connection to the PC
+1. The connection to the PC depends on the used board. Refers to [Supported Boards](./MCU/supportedBoard/SupportedBoards.md). For the [MCS MCLV-48V-300W Development Board](./../supportedBoard/MCLV_48V_300W_demoBoard.md), the Serial Link is directly provided on board by the USB cable used for programming. 
 
-   Although the board has ports to connect a serial link (USB, RS232), in this example we are using an special [FTDI cable](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_C232HD_UART_CABLE.pdf). The USB 2.0 Hi-Speed to UART cable incorporates FTDI’s FT232H USB to UART interface IC device which handles all the USB signalling and protocols.  The cable provides a fast, simple way to connect devices with 3.3 volt digital interfaces to USB. 
-   [FTDI cable Driver](https://www.ftdichip.com/Drivers/VCP.htm)
-
-   ### <img src="./../../img/vectorControl/C232HDconnection.png">
-
-   - The TX pin (orange pin 2) must be connected RX pin (mikroBUS A) of the LVMC Board.
-   - The RX pin (yellow pin 3) must be connected TX pin (mikroBUS A) of the LVMC Board.
-   - Do not forget to connect the GND (black pin 10) to the LVMC board.
-
-   The pin connection is represented below:
-
-   ### ![](./../../img/vectorControl/RXTXConnection.png)
+   <img src="./../../img/supportedBoards/MCLV_48V_300W/programmer_connection.jpg" alt="programmer_connection" style="zoom:15%;" />
 
 2. On the computer side, once the code has been program on the chip. The **PicGui** interface allows the data visualization. **PicGui** is directly accessible from the microchip banner:
 
@@ -116,17 +113,17 @@ The proposed algorithm comes with the possibility to vizualize data using PICGUI
 
    ![](./../../img/vectorControl/picgui.PNG)
 
-   4. Select the correct port, and the correct baudrate 921 600 bauds in this example. Then click on **Connexion**.
+4. Select the correct port, and the correct baudrate 460800 bauds for the example on  [MCS MCLV-48V-300W Development Board](./../supportedBoard/MCLV_48V_300W_demoBoard.md). Then click on **Connexion**.
 
-   5. To visualize the data, click on button **Start**.
+5. To visualize the data, click on button **Start**.
 
-   6. For better data visualization, download the mfile *DataVisu.m* from Github repository ([link](https://github.com/rdelpoux/ctrl-elec/tree/main/MCU/vectorControl)) and enter the DataVisu in thepicgui central windows. 
+6. For better data visualization, download the mfile *DataVisu.m* from Github repository ([link](https://github.com/rdelpoux/ctrl-elec/tree/main/MCU/vectorControl)) and enter the DataVisu in the picgui central windows. 
 
-      Results should looks like on the figure below:
+7. Results should looks like on the figure below:
 
-      ![](./../../img/vectorControl/DataVisu.png)
+   ![](./../../img/vectorControl/DataVisu.png)
 
-      The window highlight the mode (Voltage/Speed), the measured DC voltage, The Max Voltage according to the chosen SVM and the CPU load.
+8. The window highlight the mode (Voltage/Speed), the measured DC voltage, The Max Voltage according to the chosen SVM and the CPU load.
 
 ## 6. REFERENCES:
 
