@@ -2,6 +2,8 @@
 
 # Supported Boards
 
+[TOC]
+
 ## 1. Introduction 
 
 This document describes software and hardware required to use the proposed examples in the repository. 
@@ -38,13 +40,13 @@ where
 
 - [MPLAB X IDE and IPE (v6.00)](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) and [XC16 compiler (v2.00)](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
 
-[<img src="./../../img/vectorControl/mplab-xide.png" />](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) [<img src="./../../img/vectorControl/xc-compiler.png"/>](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
+[<img src="./../../img/general/mplab-xide.png" />](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) [<img src="./../../img/general/xc-compiler.png"/>](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
 
 
 
 - [Matlab R2023a](https://fr.mathworks.com/) and [Mplab Device Block for Simulink (v3.50.34b)](https://fr.mathworks.com/matlabcentral/fileexchange/71892-mplab-device-blocks-for-simulink-dspic-pic32-and-sam-mcu)
 
-[<img src="./../../img/vectorControl/Matlab_Logo.png"/>](https://fr.mathworks.com/)[<img src="./../../img/vectorControl/mplab-deviceblocksforsimulink-whitebackground.png"/>](https://fr.mathworks.com/matlabcentral/fileexchange/71892-mplab-device-blocks-for-simulink-dspic-pic32-and-sam-mcu)
+[<img src="./../../img/general/Matlab_Logo.png"/>](https://fr.mathworks.com/)[<img src="./../../img/general/mplab-deviceblocksforsimulink-whitebackground.png"/>](https://fr.mathworks.com/matlabcentral/fileexchange/71892-mplab-device-blocks-for-simulink-dspic-pic32-and-sam-mcu)
 
 - Required MATLAB add-on packages
   - Simulink (v10.7)

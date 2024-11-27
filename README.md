@@ -7,7 +7,7 @@ The ctrl + elec project aims at developing embedded advanced control strategies 
 
 ## Authors
 
-- Romain DELPOUX (Romain.Delpoux at insa-lyon.fr), Assistant Professor, INSA de Lyon, Laboratoire Ampère UMR CNRS 5005.
+- Romain DELPOUX (Romain.Delpoux at insa-lyon.fr), Associate Professor, INSA de Lyon, Laboratoire Ampère UMR CNRS 5005.
 - Lubin KERHUEL (Lubin.Kerhuel at microchip.com), PhD, Microchip Technology Inc.
 
 ## Objectives
