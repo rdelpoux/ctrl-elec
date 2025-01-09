@@ -37,6 +37,14 @@ control.zetaDMeca = 1;
 control.trwnDMeca = 5;
 control.kMeca = polePlacement2ndOrder(control.zetaDMeca, control.trwnDMeca/control.trDMeca, motor.J/motor.F, 3/2*motor.p*motor.Phif/motor.F);
 
+
+%% tuning observateur de charge luenberger système étendu
+Atau=[-motor.F/motor.J -1/motor.J ; 0 0];
+Ctau=[1 0];
+Ltau=place(Atau',Ctau',[-200 -300]);
+Ltau=Ltau';
+
+%%
 function K = polePlacement2ndOrder(zeta,wn, tau, k)
     % polePlacement2ndOrder function
     %
