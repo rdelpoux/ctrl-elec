@@ -13,7 +13,7 @@ if ~isempty(A)
     t = ([0:(length(A)-1)]  + tUart(1))*Tserial; % Do not rely on UART data arrival timestamp. Recreate time vector
     subplot(3,1,1); plot(t,A(:,2:3)); axis tight; ylabel('v_d_q (in V)'); ylim([-20 20]);    
     subplot(3,1,2); plot(t,A(:,4:5)); axis tight; ylabel('i_d_q (in A)'); ylim([-10 10]);
-    subplot(3,1,3); plot(t,[A(:,6:7)]); axis tight; ylabel('om, omr (in rpm)'); %ylim([0 6000]);
+    subplot(3,1,3); plot(t,[A(:,6:7)]); axis tight; ylabel('om, omr (in rpm)'); ylim([0 6000]);
     xlabel('time (in s)')
 
 
