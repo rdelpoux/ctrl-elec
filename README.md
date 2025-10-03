@@ -17,19 +17,28 @@ This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@
 
 [Getting started](https://youtu.be/fAhIvsgS1aM?si=hjhc9MEHJ1EK3xQb)
 
-## Content
+## [Wiki Content](https://github.com/rdelpoux/ctrl-elec/wiki)
 
-- [Supported Boards](./MCU/supportedBoard/SupportedBoards.md)
-
-- [Vector control tutorial](./MCU/vectorControl/README.md)
-
-- [Vector control with Field Weakening](./MCU/fieldWeakening/README.md) 
-
-- [Regional Pole Placement embedded LMI solver](./MCU/LMIsolver/README.md)
-
-- [Offline real-time high frequency data logging based methodology](./MCU/dataLogging/readme.md)
-
-  
+This github repository comes with a detailled [wiki](https://github.com/rdelpoux/ctrl-elec/wiki) 
 
 
+### Supported Boards
+
+- [Supported Boards](https://github.com/rdelpoux/ctrl-elec/wiki/01_supportedBoard_SupportedBoards)
+
+### Basic vector control
+
+- [Vector control tutorial](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl)
+- [ctrl+elec lab](https://github.com/rdelpoux/ctrl-elec/wiki/ctrlelecLab)
+  - [Getting Started](https://github.com/rdelpoux/ctrl-elec/wiki/labGettingStarted)
+  - [Block configuration for Motor Control](https://github.com/rdelpoux/ctrl-elec/wiki/labBlockconfigurationforMotorControl)
+  - [Embedded Simulink model](https://github.com/rdelpoux/ctrl-elec/wiki/labEmbeddedModelv2)
+  - [Observer design](https://github.com/rdelpoux/ctrl-elec/wiki/Observerdesign)
+
+
+### Advanced control
+
+- [Vector control with Field Weakening](https://github.com/rdelpoux/ctrl-elec/tree/main/MCU/fieldWeakening) 
+- [Regional Pole Placement embedded LMI solver](https://github.com/rdelpoux/ctrl-elec/tree/main/MCU/LMIsolver)
+- [Offline real-time high frequency data logging based methodology](https://github.com/rdelpoux/ctrl-elec/tree/main/MCU/dataLogging)
 
