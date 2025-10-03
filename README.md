@@ -17,10 +17,13 @@ This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@
 
 [Getting started](https://youtu.be/fAhIvsgS1aM?si=hjhc9MEHJ1EK3xQb)
 
-## [Wiki Content](https://github.com/rdelpoux/ctrl-elec/wiki)
 
-This github repository comes with a detailled [wiki](https://github.com/rdelpoux/ctrl-elec/wiki) 
 
+## 📚 Documentation
+
+The full project documentation is available in the [Wiki](https://github.com/rdelpoux/ctrl-elec/wiki) of this repository. You will find guides, tutorials, and detailed explanations to get started.
+
+Content : 
 
 ### Supported Boards
 
