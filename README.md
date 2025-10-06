@@ -3,40 +3,49 @@
 
 [![View ctrl-elec on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://fr.mathworks.com/matlabcentral/fileexchange/135637-ctrl-elec)
 
-The ctrl + elec project aims at developing embedded advanced control strategies for Synchronous motors from surface mounted motors to reluctance motors. For more informations on the project, visit [www.ctrl-elec.fr](https://www.ctrl-elec.fr/)
+The **ctrl+elec** project focuses on the development of **embedded advanced control strategies for synchronous motors**, ranging from surface-mounted permanent magnet motors to reluctance motors. For more information, visit [www.ctrl-elec.fr](https://www.ctrl-elec.fr/).
+
+---
 
 ## Authors
 
-- Romain DELPOUX (Romain.Delpoux at insa-lyon.fr), Associate Professor, INSA de Lyon, Laboratoire Ampère UMR CNRS 5005.
-- Lubin KERHUEL (Lubin.Kerhuel at microchip.com), PhD, Microchip Technology Inc.
+- **Romain DELPOUX** – Associate Professor, INSA de Lyon, Laboratoire Ampère UMR CNRS 5005  
+  *(Romain.Delpoux@insa-lyon.fr)*  
+- **Lubin KERHUEL** – PhD, Microchip Technology Inc.  
+  *(Lubin.Kerhuel@microchip.com)*
+
+---
 
 ## Objectives
-This repository contains the different source files (mainly Simulink files) to experiment the embedded motor control example proposed in the framework of the ctrl+elec project. A part of the project is called [**Motor Control University (MCU)**](www.ctrl-elec.fr/motor_control_university.html). It is dedicated to tutorials about embedded motor control. The aim is to provide a step-by-step guidance for engineers wishing to train and/or specialize in embedded advanced control for  electric motor.
 
-This website comes with the you tube page [@ctrl_elec](https://www.youtube.com/@ctrl_elec)
+This repository contains source files (mainly Simulink models) to experiment with embedded motor control examples proposed within the ctrl+elec project.  
 
-[Getting started](https://youtu.be/fAhIvsgS1aM?si=hjhc9MEHJ1EK3xQb)
+Part of the project is dedicated to the **[Motor Control University (MCU)](https://www.ctrl-elec.fr/motor_control_university.html)**, which provides **step-by-step tutorials** for engineers wishing to train or specialize in embedded advanced control of electric motors.  
 
+Additional resources, including tutorials and demonstrations, are available on our **[YouTube page @ctrl_elec](https://www.youtube.com/@ctrl_elec)**:  
+[Getting started video](https://youtu.be/fAhIvsgS1aM?si=hjhc9MEHJ1EK3xQb)
 
+------
 
 ## 📚 Documentation
 
 The full project documentation is available in the [Wiki](https://github.com/rdelpoux/ctrl-elec/wiki) of this repository. You will find guides, tutorials, and detailed explanations to get started.
 
-Content : 
-
 ### Supported Boards
 
-- [Supported Boards](https://github.com/rdelpoux/ctrl-elec/wiki/01_supportedBoard_SupportedBoards)
+- [Supported Boards Overview](https://github.com/rdelpoux/ctrl-elec/wiki/01_supportedBoard_SupportedBoards)
+  - [MCLV 48V 300W Demo Board](https://github.com/rdelpoux/ctrl-elec/wiki/01_supportedBoard_MCLV_48V_300W_demoBoard)
+  - [LVMC Demo Board](https://github.com/rdelpoux/ctrl-elec/wiki/01_supportedBoard_LVMC_demoBoard)
+  - [MCLV2 Demo Board](https://github.com/rdelpoux/ctrl-elec/wiki/01_supportedBoard_MCLV2_demoBoard)
 
 ### Basic vector control
 
-- [Vector control tutorial](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl)
-- [ctrl+elec lab](https://github.com/rdelpoux/ctrl-elec/wiki/ctrlelecLab)
-  - [Getting Started](https://github.com/rdelpoux/ctrl-elec/wiki/labGettingStarted)
-  - [Block configuration for Motor Control](https://github.com/rdelpoux/ctrl-elec/wiki/labBlockconfigurationforMotorControl)
-  - [Embedded Simulink model](https://github.com/rdelpoux/ctrl-elec/wiki/labEmbeddedModelv2)
-  - [Observer design](https://github.com/rdelpoux/ctrl-elec/wiki/Observerdesign)
+- [Vector Control Tutorial](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl)
+- [ctrl+elec Lab Introduction](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl_labIntro)
+  - [Hardware Specification](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl_labHardwareSpecifications)
+  - [Block Configuration for Motor Control](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl_labBlockConfigurationForMotorControl)
+  - [Embedded Motor Control](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl_labEmbeddedModel)
+  - [Motor Speed Observer Design](https://github.com/rdelpoux/ctrl-elec/wiki/02_basicVectorControl_labObserverDesign)
 
 
 ### Advanced control
